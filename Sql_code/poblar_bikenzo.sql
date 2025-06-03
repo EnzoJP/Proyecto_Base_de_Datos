@@ -48,11 +48,11 @@ INSERT INTO empleados.repuesto (nombre_rep) VALUES
   ('Motor');
 
 INSERT INTO empleados.mantenimiento (tipo, fecha) VALUES
-  ('Cubierta', 2025-05-14),
-  ('Freno', 2025-05-13),
-  ('Freno', 2025-04-19),
-  ('Motor', 2025-04-27),
-  ('Cadena', 2025-04-21);
+  ('Cubierta', '2025-05-14'),
+  ('Freno', '2025-05-13'),
+  ('Freno', '2025-04-19'),
+  ('Motor', '2025-04-27'),
+  ('Cadena', '2025-04-21');
 
 INSERT INTO empleados.mantenimiento_realizado (nro_mantenimiento, id_repuesto, id_producto) VALUES
   (1, 2, 12),
@@ -69,14 +69,14 @@ INSERT INTO empleados.empleado_mantenimiento (nro_mantenimiento, id_empleado) VA
   (5, 4);
 
 INSERT INTO alquileres.alquiler (metodo_pago, fecha_desde, fecha_hasta, fecha_devolucion, importe, nro_comprobante, id_cliente, id_empleado) VALUES
-  ('Transferencia', 2025-05-06, 2025-05-07, 2025-05-07, 1873.78, 'COMP-5427', 7, 1),
-  ('Transferencia', 2025-05-14, 2025-05-17, 2025-05-17, 5329.64, 'COMP-4980', 6, 5),
-  ('Efectivo', 2025-05-14, 2025-05-15, 2025-05-15, 5628.84, 'COMP-4124', 5, 1),
-  ('Tarjeta', 2025-05-03, 2025-05-04, 2025-05-04, 2945.82, 'COMP-1824', 6, 2),
-  ('Transferencia', 2025-05-07, 2025-05-09, 2025-05-09, 2868.84, 'COMP-9353', 2, 5),
-  ('Transferencia', 2025-05-07, 2025-05-10, NULL, 2713.68, 'COMP-8740', 8, 4),
-  ('Transferencia', 2025-05-03, 2025-05-05, 2025-05-05, 5817.13, 'COMP-6400', 4, 3),
-  ('Efectivo', 2025-05-09, 2025-05-10, 2025-05-10, 6635.32, 'COMP-2427', 7, 3);
+  ('Transferencia', '2025-05-06', '2025-05-07', '2025-05-07', 1873.78, 'COMP-5427', 7, 1),
+  ('Transferencia', '2025-05-14', '2025-05-17', '2025-05-17', 5329.64, 'COMP-4980', 6, 5),
+  ('Efectivo', '2025-05-14', '2025-05-15', '2025-05-15', 5628.84, 'COMP-4124', 5, 1),
+  ('Tarjeta', '2025-05-03', '2025-05-04', '2025-05-04', 2945.82, 'COMP-1824', 6, 2),
+  ('Transferencia', '2025-05-07', '2025-05-09', '2025-05-09', 2868.84, 'COMP-9353', 2, 5),
+  ('Transferencia', '2025-05-07', '2025-05-10', NULL, 2713.68, 'COMP-8740', 8, 4),
+  ('Transferencia', '2025-05-03', '2025-05-05', '2025-05-05', 5817.13, 'COMP-6400', 4, 3),
+  ('Efectivo', '2025-05-09', '2025-05-10', '2025-05-10', 6635.32, 'COMP-2427', 7, 3);
 
 INSERT INTO alquileres.infraccion (recargo, descripcion, id_alquiler) VALUES
   (566.19, 'Demora.', 6),
@@ -100,4 +100,3 @@ INSERT INTO alquileres.alquiler_producto (id_alquiler, id_producto) VALUES
   (8, 14),
   (8, 1),
   (8, 11);
-
